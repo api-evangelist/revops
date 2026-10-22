@@ -1,7 +1,6 @@
 aid: revops
 name: RevOps
-description: 'RevOps is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by coatue) and added to the network as a stub for full-pipeline profiling.'
+description: 'RevOps provides a modern CPQ and deal desk platform that streamlines revenue operations for SaaS and enterprise businesses. The solution offers configurable approval workflows, integration with HubSpot, Salesforce, DocuSign, Maxio, Chargebee, Slack, and Google Workspace, enabling teams to create, manage, and close deals efficiently. Acquired by Maxio, RevOps continues to expand its feature set with advanced pricing tables, contract templates, and real‑time collaboration tools, positioning itself as a comprehensive revenue operations hub.'
 url: https://raw.githubusercontent.com/api-evangelist/revops/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:vc-portfolio
@@ -11,7 +10,11 @@ specificationVersion: '0.20'
 created: '2026-10-22'
 modified: '2026-10-22'
 tags:
-- Company
+- CPQ
+- Revenue-Operations
+- SaaS
+- Integrations
+- Deal-Desk
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +24,24 @@ maintainers:
 x-backed-by:
 - coatue
 common:
+- type: VulnerabilityDisclosure
+  url: security/revops-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/revops-domain-security.yml
 - type: Website
   url: https://www.revops.io/
+
+- type: Documentation
+  url: https://docs.revops.io/
+- type: DeveloperPortal
+  url: https://app.revops.io/
+- type: GettingStarted
+  url: https://docs.revops.io/guides/quick-start/
+- type: Support
+  url: mailto:support@revops.io
+- type: Blog
+  url: https://www.revops.io/blog
+- type: Pricing
+  url: https://www.revops.io/pricing
+- type: TermsOfService
+  url: https://www.revops.io/terms
