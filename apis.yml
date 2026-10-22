@@ -1,6 +1,7 @@
 aid: revops
 name: RevOps
 description: 'RevOps provides a modern CPQ and deal desk platform that streamlines revenue operations for SaaS and enterprise businesses. The solution offers configurable approval workflows, integration with HubSpot, Salesforce, DocuSign, Maxio, Chargebee, Slack, and Google Workspace, enabling teams to create, manage, and close deals efficiently. Acquired by Maxio, RevOps continues to expand its feature set with advanced pricing tables, contract templates, and real‑time collaboration tools, positioning itself as a comprehensive revenue operations hub.'
+image: "https://www.revops.io/design-assets/logos/Logomark-Gradient-no-bg.svg"
 url: https://raw.githubusercontent.com/api-evangelist/revops/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:vc-portfolio
@@ -45,3 +46,9 @@ common:
   url: https://www.revops.io/pricing
 - type: TermsOfService
   url: https://www.revops.io/terms
+- type: PrivacyPolicy
+  url: https://www.revops.io/privacy-policy
+- type: CookiePolicy
+  url: https://www.revops.io/cookie-policy
+- type: Disclaimer
+  url: https://www.revops.io/disclaimer
