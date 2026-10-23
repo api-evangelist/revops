@@ -1,0 +1,42 @@
+generated: '2026-10-23'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.revops.io/integrations/chargebee/sandbox-testing/
+sources:
+- https://docs.revops.io/integrations/chargebee/sandbox-testing/
+description: RevOps sandbox testing for Chargebee integration.
+modes:
+- name: sandbox
+test_values:
+- kind: test_card
+  value: 4242 4242 4242 4242
+  meaning: Visa Successful Payment (Stripe)
+- kind: test_card
+  value: 5555 5555 5555 4444
+  meaning: Mastercard Successful Payment (Stripe)
+- kind: test_card
+  value: 6011 1111 1111 1117
+  meaning: Discover Successful Payment (Stripe)
+- kind: test_card
+  value: 3782 822463 10005
+  meaning: American Express Successful Payment (Stripe)
+- kind: test_card
+  value: 4000 0000 0000 9995
+  meaning: Visa Insufficient Funds at Payment Details Step (Stripe)
+- kind: test_card
+  value: 4000 0000 0000 0341
+  meaning: Visa Insufficient Funds at Confirm Step (Stripe)
+- kind: test_card
+  value: 4111 1111 1111 1111
+  meaning: Visa Successful Payment (Authorize.net)
+- kind: test_card
+  value: 5424 0000 0000 0015
+  meaning: Mastercard Successful Payment (Authorize.net)
+- kind: test_card
+  value: 6011 0000 0000 0012
+  meaning: Discover Successful Payment (Authorize.net)
+- kind: test_card
+  value: 3700 000000 00002
+  meaning: American Express Successful Payment (Authorize.net)
+docs:
+- https://docs.revops.io/integrations/chargebee/sandbox-testing/

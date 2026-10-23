@@ -1,0 +1,15 @@
+generated: '2026-10-23'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io)
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (mailto:support@revops.io,
+  postman.com, revops.io, security/revops-domain-security.yml, security/revops-vulnerability-disclosure.yml) or its accepted GitHub org.'
+packages:
+- name: revops
+  registry: pypi
+  url: https://pypi.org/project/revops/
+  language: Python
+  official: true
+  version: 0.0.6
+  published: '2019-08-19'
+  evidence: metadata names revops.io

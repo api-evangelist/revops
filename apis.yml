@@ -1,30 +1,66 @@
 aid: revops
+
 name: RevOps
+
 description: 'RevOps provides a modern CPQ and deal desk platform that streamlines revenue operations for SaaS and enterprise businesses. The solution offers configurable approval workflows, integration with HubSpot, Salesforce, DocuSign, Maxio, Chargebee, Slack, and Google Workspace, enabling teams to create, manage, and close deals efficiently. Acquired by Maxio, RevOps continues to expand its feature set with advanced pricing tables, contract templates, and real‑time collaboration tools, positioning itself as a comprehensive revenue operations hub.'
+
 image: "https://www.revops.io/design-assets/logos/Logomark-Gradient-no-bg.svg"
+
 url: https://raw.githubusercontent.com/api-evangelist/revops/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - CPQ
 - Revenue-Operations
 - SaaS
 - Integrations
 - Deal-Desk
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- coatue
+
 common:
+- type: Plans
+  url: plans/revops-plans-pricing.yml
+- type: ChangeLog
+  url: changelog/revops-changelog.yml
+- type: Sandbox
+  url: sandbox/revops-sandbox.yml
+- type: Authentication
+  url: authentication/revops-authentication.yml
+- type: SecurityTxt
+  url: well-known/revops-status-security.txt
+- type: WellKnown
+  url: well-known/revops-well-known.yml
+- type: Hosts
+  url: hosts/revops-hosts.yml
+- type: Vendors
+  url: vendors/revops-vendors.yml
+- type: SDKs
+  url: packages/revops-packages.yml
+- type: Packages
+  url: packages/revops-packages.yml
+- type: StatusPage
+  url: https://status.revops.io
+- type: Security
+  url: https://www.revops.io/security
+- type: ChangeLog
+  url: https://www.revops.io/release-notes
 - type: VulnerabilityDisclosure
   url: security/revops-vulnerability-disclosure.yml
 - type: DomainSecurity
@@ -52,3 +88,27 @@ common:
   url: https://www.revops.io/cookie-policy
 - type: Disclaimer
   url: https://www.revops.io/disclaimer
+- type: Postman
+  url: https://www.postman.com/revops/workspace
+- type: SignUp
+  url: https://app.revops.io/signup
+
+apis: []
+
+x-backed-by:
+- coatue
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Docs site returns HTML shells and no OpenAPI spec at known paths.
+  evidence:
+    - url: https://docs.revops.io/openapi.json
+      status: 404
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

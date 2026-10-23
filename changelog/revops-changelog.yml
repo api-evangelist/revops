@@ -1,0 +1,80 @@
+generated: '2026-10-23'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.revops.io/release-notes
+sources:
+- https://www.revops.io/release-notes
+- https://www.revops.io/release-notes/chat-support-launched
+- https://www.revops.io/release-notes/improved-search
+- https://www.revops.io/release-notes/deal-expiration-ui
+entries:
+- breaking: false
+  highlights:
+  - This week we launched chat support inside the platform for all customers.
+  - This new system uses our knowledge base to provide quick answers to your most common questions.
+  - If additional help is needed, the chat can submit a support ticket to connect you with a live agent.
+  date: '2025-09-05'
+- breaking: false
+  highlights:
+  - 'This month we released: Improved Search, Deal Expiration UI, Quantity Drawer.'
+  - 'Available in Plans: Freemium, Pro and Enterprise.'
+  date: '2025-08-31'
+- breaking: false
+  highlights:
+  - We've heard your feedback and this week we deployed updates to improve your search experience.
+  - Increased the number of Deals that are returned in search results.
+  - Sort and rank by the most recent activity.
+  - Improved name indexing.
+  date: '2025-08-22'
+- breaking: false
+  highlights:
+  - We have updated the View as Customer mode to clearly indicate when a deal has expired or is nearing expiration.
+  - This information is only visible to Sales Reps and is never shown directly to customers.
+  date: '2025-08-22'
+- breaking: false
+  highlights:
+  - In this release, we're introducing the new Quantity Drawer UI as part of our ongoing effort to clean up the left-side UI of the deal editor
+    and deal studio.
+  - This new drawer is consistent with the recently released Start and End Date drawers, providing a streamlined and cohesive user experience.
+  date: '2025-08-19'
+- breaking: false
+  highlights:
+  - We're actively refactoring the left-side UI for the Product tab within the Deal Studio and Deal Editor.
+  - This week, we're releasing a new Dates Drawer that will significantly enhance the user experience for managing start and end dates on line
+    items.
+  - It provides users with a clearer understanding of when dates are editable and when permissions prevent specific personas from editing dates.
+  date: '2025-07-10'
+- breaking: false
+  highlights:
+  - We've resolved previous issues with Logo and Business information alignment on the deal render preview.
+  - We've now released an optimized alignment to customers, featuring consistent paddings and spacing, along with optimized logo sizing for various
+    aspect ratios.
+  date: '2025-04-10'
+- breaking: false
+  highlights:
+  - 'This month we released: Subscription Upgrades (Beta), Refactoring Product Tab, Refactoring Pricing Table section, New Salesforce Custom Mappings.'
+  date: '2025-03-31'
+- breaking: false
+  highlights:
+  - Sales Operators can now synchronize additional line item information to Salesforce through dedicated mappings.
+  - deal.skus.*.annualPrice - Synchronize the annual price for the specified line item.
+  - deal.skus.*.adjustedAnnual - Synchronize the adjusted annual price of the specified line item.
+  date: '2025-03-28'
+- breaking: false
+  highlights:
+  - We've enhanced the Pricing Table's Left Side UI for better consistency and alignment with our Design System.
+  - Introduced a new Table Name and Description drawer, collapsed by default.
+  - Improved breadcrumbs and toggles for better usability.
+  date: '2025-03-20'
+- breaking: false
+  highlights:
+  - This week we launched an improved Subscription summary table targeting Renewals and Expansions workflows.
+  - Enterprise customers can request enrollment in the Beta.
+  date: '2025-03-14'
+- breaking: false
+  highlights:
+  - In our effort to upgrade the Editor and Studio UI, we're refactoring the entire left-side user interface, starting with the Product Tab.
+  - We've enhanced the Pricing Table component UI for consistency and alignment with our Design System.
+  date: '2025-03-06'
+note: Versioning scheme and current version are not listed on the provided pages.
+docs: https://www.revops.io/release-notes

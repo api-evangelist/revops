@@ -1,0 +1,72 @@
+generated: '2026-10-23'
+method: probed
+source: pre-flight dossier (docs platform, portal detections) + CNAME chains and response headers of the hosts apis.yml names
+registry: all/0-working/vendors.yml
+areas_vocabulary:
+- documentation
+- developer-portal
+- api-gateway
+- cdn
+- hosting
+- sdk-generation
+- api-collections
+- status-page
+- support
+- community
+- identity
+- mcp-hosting
+vendors:
+- vendor: postman
+  name: Postman
+  area: api-collections
+  host: www.postman.com
+  evidence: https://www.postman.com/revops/workspace
+  signal: url:postman.com
+  confidence: high
+  kin_score:
+  - postman_collection
+- vendor: cloudflare
+  name: Cloudflare
+  area: cdn
+  host: www.revops.io
+  evidence: header:cf-ray
+  signal: header
+  confidence: high
+  kin_score:
+  - https_enforced
+  - hsts
+- vendor: cloudfront
+  name: Amazon CloudFront
+  area: cdn
+  host: www.revops.io
+  evidence: cname:cloudfront.net
+  signal: cname
+  confidence: high
+  kin_score: []
+- vendor: docusaurus
+  name: Docusaurus
+  area: documentation
+  host: docs.revops.io
+  evidence: markup:docusaurus
+  signal: docs-platform
+  confidence: medium
+  kin_score: []
+reliance:
+  areas_vendor_served:
+  - api-collections
+  - cdn
+  - documentation
+  vendor_count: 4
+  areas_observed: 12
+  share_of_observable_areas: 0.25
+  note: areas where a third party was DETECTED serving this provider; an area absent here was either self-run or not observed, and this script
+    cannot tell those apart
+checked:
+- 'docs-platform: docusaurus'
+- status.revops.io (StatusPage)
+- www.revops.io (Website)
+- docs.revops.io (Documentation)
+- app.revops.io (DeveloperPortal)
+- docs.revops.io (GettingStarted)
+- www.postman.com (Postman)
+- app.revops.io (SignUp)

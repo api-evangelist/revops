@@ -1,0 +1,19 @@
+generated: '2026-10-23'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.revops.io/webhooks/authentication/
+sources:
+- https://docs.revops.io/webhooks/authentication/
+- https://docs.revops.io/signing-agreements/
+- https://docs.revops.io/signing-agreements/counter-signing-revops-deals/
+- https://docs.revops.io/signing-agreements/customer-notifications/
+description: Authentication for RevOps webhooks uses an HMAC signature sent in a custom HTTP header.
+schemes:
+- type: hmac
+  name: X-RevOps-Content-Hmac
+  evidence: 'RevOps generates an HMAC signature of the request''s body contents and includes this information as a custom header:'
+  location: header
+  header: X-RevOps-Content-Hmac
+  how_to_obtain: The HMAC signature is generated using the webhook's verification key, which can be found at /integrations/webhooks/setup.
+note: No other authentication schemes (e.g., OAuth2, API keys, etc.) are documented on the provided pages.
+docs: https://docs.revops.io/webhooks/authentication/

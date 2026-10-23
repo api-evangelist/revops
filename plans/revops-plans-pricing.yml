@@ -1,0 +1,22 @@
+generated: '2026-10-23'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.revops.io/pricing
+sources:
+- https://www.revops.io/pricing
+- https://docs.revops.io/skus/how-to-create-a-graduated-tiered-pricing-sku/
+- https://docs.revops.io/skus/how-to-create-a-stairstep-pricing-sku/
+- https://www.revops.io/blog-categories/pricing-strategy
+name: RevOps pricing
+audience: business-product
+pricing_basis: none
+plans:
+- name: Freemium
+  price_text: $0 /user/month
+  price: 0
+- name: Pro
+  price_text: $75 /user/month
+  price: 75
+- name: Enterprise
+  price_text: Talk to us /user/month
+docs: https://www.revops.io/pricing
